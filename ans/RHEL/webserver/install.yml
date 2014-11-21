@@ -1,0 +1,7 @@
+---
+# Installs httpd 
+- hosts: 127.0.0.1
+  tasks: 
+    - name: Installing webserver...
+      yum: name=httpd state=latest
+      sudo: yes 

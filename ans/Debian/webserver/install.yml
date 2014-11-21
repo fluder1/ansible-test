@@ -1,0 +1,9 @@
+---
+#Installs and starts apache2 
+- hosts: 127.0.0.1
+remote_user: afluder1
+sudo_user: afluder1
+tasks:
+- name: Check for Apache
+apt: name=apache2 state=latest
+sudo: yes

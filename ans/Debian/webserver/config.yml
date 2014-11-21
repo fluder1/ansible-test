@@ -1,0 +1,8 @@
+---
+#Configures Webserver
+- hosts: 127.0.0.1
+tasks:
+- name: Loading Apache2 configurations...
+template: src=apache2.conf dest=/etc/apache2/apache2.conf
+- name: Loading Ports configurations...
+template: src=ports.conf dest=/etc/apache2/ports.conf

@@ -1,0 +1,6 @@
+---
+#Confirgures Index File for Webserver
+- hosts: 127.0.0.1
+tasks:
+- name: Configuring Webserver homepage...
+template: src=index.html dest=/var/www/index.html

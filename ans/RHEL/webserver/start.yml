@@ -1,0 +1,7 @@
+---
+# Starts httpd
+- hosts: 127.0.0.1
+  tasks:
+    - name Starting webserver...
+      service: name=httpd state=started
+      sudo: yes

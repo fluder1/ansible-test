@@ -1,0 +1,7 @@
+---
+# Replaces httpd.conf file
+- hosts: 127.0.0.1
+  tasks:
+    - name Loading default webserver configurations...
+      template: src= httd.conf dest=/etc/httpd/conf/httpd.conf
+      sudo: yes
